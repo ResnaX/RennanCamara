@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>JoKenPo</title>
+	<link rel="stylesheet" href="joquempo.css">
+</head>
+<body bgcolor="#ff8800">
+
+<center>
+	<img src="img.jpeg" width="600px">
+<div id="main">
+ 	
+	<label for="placar-jogador" id="label-jogador">Jogador</label>
+    <input type="text" id="placar-jogador" class="placar" readonly="readonly" value="0" />
+    X 
+    
+    <input type="text" id="placar-computador" class="placar" readonly="readonly" value="0" />
+    <label for="placar-computador">Computador</label>
+
+    <br /><br />
+
+    <select id="opcaojogador">
+        <option value=""> -- Faça sua escolha -- </option>
+        <option value="pedra"> Pedra </option>
+        <option value="papel"> Papel </option>
+        <option value="tesoura"> Tesoura </option>
+    </select>
+
+    <input type="button" value="Jogar!" id="btn-action" />
+
+    <br /><br /><br />
+
+    <table>
+        <tr>
+            <th id="th-jogador">Jogador</th>
+            <td>&nbsp;</td>
+            <th>Computador</th>
+        </tr>
+        <tr>
+            <td id="cmp-jogador">--</td>
+            <td> X </td>
+            <td id="cmp-computador">--</td>
+        </tr>
+        <tr>
+            <th>Vencedor: </th>
+            <td>&nbsp;</td>
+            <td id="cmp-vencedor">--</td>
+        </tr>        
+    </table>
+</center>
+</div>
+<script src="javascript.js">
+</script>
+<h4 style="color:#FFFFFF; text-align: center; font-family: Open Sans;">REGRAS:<br>Tesoura > Papel <br>Papel > Pedra <br> Pedra > Tesoura<br>Escolha:</h4>
+</body>
+</html>
